@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Name Lesson</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Hello there!</h1>
+      <button class="button" onclick="changeValue();">
+        Click here to begin!
+      </button>
+      <div class="exr" id="content"></div>
+    </div>
+    <script>
+      function changeValue() {
+        let div = document.getElementById("content");
+        let name = prompt("Type your full name");
+        div.classList.toggle("visible");
+        div.innerHTML = `Your name is: ${name}<br />
+         Your name have ${name.length} characters<br />
+         The second character of your name is: ${name[1]}<br />
+         Your name in upper case is: ${name.toUpperCase()}<br />
+         Your name in lower case is: ${name.toLowerCase()}<br />
+         The last 3 characters of your name are: ${name.slice(-3)}<br />`;
+      }
+    </script>
+  </body>
+</html>

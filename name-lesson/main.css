@@ -1,0 +1,82 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+
+body {
+  background-color: #212121;
+  font-family: "Oswald", sans-serif;
+}
+
+p + p {
+  gap: 1rem; /* 16px */
+}
+
+/* TITLE */
+
+.title {
+  font-size: 7rem; /* 112px */
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(255, 81, 0),
+    red,
+    purple,
+    blue
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CONTAINER */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1rem; /* 16px */
+  width: 100vw;
+}
+
+/* DIV */
+
+.exr {
+  visibility: hidden;
+  display: none;
+  border: solid 5px rgb(56, 56, 56);
+  padding: 3rem; /* 48px */
+  border-radius: 10px;
+  background: #181717;
+  justify-content: center;
+  color: #fafafa;
+  width: 50%;
+  font-size: 1.56rem;
+}
+
+.visible {
+  visibility: visible;
+  display: flex;
+}
+
+/* BUTTON */
+
+.button {
+  background: rgba(0, 0, 0, 0);
+  border: solid 5px green;
+  padding: 1rem; /* 16px */
+  color: green;
+  border-radius: 10px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
