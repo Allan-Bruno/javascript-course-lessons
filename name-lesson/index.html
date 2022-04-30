@@ -25,7 +25,7 @@
       function changeValue() {
         let div = document.getElementById("content");
         let name = prompt("Type your full name");
-        div.classList.toggle("visible");
+        div.classList.add("visible");
         div.innerHTML = `Your name is: ${name}<br />
          Your name have ${name.length} characters<br />
          The second character of your name is: ${name[1]}<br />
