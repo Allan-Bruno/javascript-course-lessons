@@ -80,3 +80,16 @@ p + p {
   font-size: 15px;
   cursor: pointer;
 }
+
+/* RESPONSIVITY */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 4rem; /* 64px */
+  }
+
+  .exr {
+    font-size: 1rem; /* 16px */
+    width: 90%;
+  }
+}
